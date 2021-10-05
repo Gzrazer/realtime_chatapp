@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="http://localhost:5000/socket.io/socket.io.js"></script>
+    <title>Chat App</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <h1>Chat App</h1>
+        <div style="display: flex;">
+            <h3>Online Users: </h3>
+            &nbsp;
+            <h3 id="usersCount"></h3>
+        </div>
+
+        <div id="chatsContainer" class="conversation"></div>
+
+        <form autocomplete="off" id="inputForm" class="input-form">
+            <input type="text" name="form-input" id="formInput" placeholder="Enter your Name"/>
+
+            <button type="submit" id="formBtn">Enter</button>
+        </form>
+    </div>
+
+</body>
+</html>
